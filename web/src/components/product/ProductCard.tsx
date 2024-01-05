@@ -20,7 +20,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         </p>
       )}
       <div className="mb-2 flex gap-2">
-        <p className="text-3xl tracking-tighter">{price(product.price)}</p>
+        <p className="text-2xl tracking-tighter">{price(product.price)}</p>
         {!!product.oldPrice && (
           <p className="text-green-600 text-lg tracking-tighter">
             {discount(product.oldPrice, product.price)} OFF
